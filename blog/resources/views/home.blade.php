@@ -1,23 +1,23 @@
-@extends('user/app')
+@extends('layouts.app')
 
-@section('bg-img',asset('user/img/contact-bg.jpg'))
-@section('head')
+@section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Dashboard</div>
 
-@endsection
-@section('title','Welcome to Home')
-@section('sub-heading','')
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-@section('main-content')
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-           Welcome to Bitfumes - Ed Sheeran and Spiderman (homecoming)
+                    You are logged in!
+                </div>
+            </div>
         </div>
     </div>
-</article>
-
-<hr>
-@endsection
-@section('footer')
+</div>
 @endsection
