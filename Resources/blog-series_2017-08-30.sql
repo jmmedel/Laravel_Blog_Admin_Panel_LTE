@@ -6,7 +6,7 @@
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 127.0.0.1 (MySQL 5.7.18)
-# Database: blog-series
+# Database: blog_admin_lte
 # Generation Time: 2017-08-30 09:04:34 +0000
 # ************************************************************
 

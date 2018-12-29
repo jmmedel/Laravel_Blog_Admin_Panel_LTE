@@ -154,4 +154,5 @@ class PostController extends Controller
         post::where('id',$id)->delete();
         return redirect()->back();
     }
+    
 }
